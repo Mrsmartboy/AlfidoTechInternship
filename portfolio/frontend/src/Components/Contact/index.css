@@ -1,0 +1,148 @@
+/* General Container Styles */
+.contact-container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ min-height: 100vh;
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width:768px){
+  .contact-container-1{
+    margin-top: 200px;
+  }
+}
+
+
+.contact-header {
+  font-size: 35px;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-left, .contact-right {
+  width: 50%;
+  padding: 30px;
+}
+
+/* Left Section */
+.contact-left {
+  background-color: #f0f0f0;
+}
+
+.contact-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: 15px;
+}
+
+.contact-info span {
+  font-size: 1rem;
+  color: #555;
+  margin-left: 2px;
+}
+
+.contact-info span:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Right Section */
+.contact-right {
+  background-color: #fff;
+  margin: 20px;
+}
+
+.contact-right h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-submit {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-submit:hover {
+  background-color: #555;
+}
+
+/* Messages */
+.success-message {
+  color: green;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left, .contact-right {
+    width: 90%;
+  }
+  .contact-input,.contact-submit{
+    width: 80%;
+  }
+}

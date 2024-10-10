@@ -1,0 +1,87 @@
+
+
+.home-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+@media screen and (max-width:768px){
+    .home-container{
+      padding-top: 190px;
+    }
+  }
+
+.profile-image{
+    width: 25%;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 60vh;
+}
+.profile-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+
+.hello{
+    font-size: 22px;
+    color: aliceblue;
+    margin-bottom: 0px;
+
+}
+
+.name{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+
+}
+.developer{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+
+}
+
+.developer-1{
+    color: crimson;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+
+}
+
+.bottom-page{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width:576px){
+    .home-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-image{
+        width:50%;
+        margin-bottom: 10px;
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,91 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    height: 60px; /* Keep the height fixed */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  .header {
+    font-size: 1.5rem;
+  }
+  
+  .list-container {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .item-container {
+    color: #fff;
+    margin-right: 20px;
+    font-weight: 500;
+  }
+  
+  .item-container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .item-container a:hover {
+    color: crimson;
+  }
+  
+  .active-link {
+    color: #f0a500;
+    font-weight: bold;
+  }
+  
+  /* Add margin to prevent content from being hidden behind the navbar */
+  .content-container {
+    margin-top: 70px; /* Ensure there's enough space for the fixed navbar */
+  }
+  
+  /* Responsive Design for smaller screens (Mobile view) */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .header {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+  
+    .list-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .item-container a {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Extra small screens (Mobile phones) */
+  @media (max-width: 480px) {
+    .header {
+      font-size: 1.4rem;
+    }
+  
+    .item-container a {
+      font-size: 1rem;
+    }
+  
+    .list-container {
+      gap: 8px;
+    }
+  }
+  
