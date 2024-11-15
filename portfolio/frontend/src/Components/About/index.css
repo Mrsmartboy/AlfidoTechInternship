@@ -9,18 +9,12 @@
    width: 100vw;
 
 }
-@media screen and (max-width:768px){
-    .card-container{
-      padding-top: 100px;
-    }
-  }
 
 .about-header{
     text-decoration: underline;
     color: white;
     font-size: 35px;
     font-weight: bold;
-    margin-top: 200px;
 }
 
 .about-image{

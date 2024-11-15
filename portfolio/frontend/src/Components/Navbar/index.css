@@ -1,91 +1,100 @@
+/* General Navigation Container */
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    height: 60px; /* Keep the height fixed */
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    width: 100%;
-  }
-  
-  .header {
-    font-size: 1.5rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 99%;
+}
+
+/* Header */
+.header {
+  margin: 0;
+  color: crimson;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* List Container */
+.list-container {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Item Container */
+.item-container {
+  margin: 0 20px;
+}
+
+.item-container a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.item-container a:hover {
+  color: crimson; /* Change text color on hover */
+  transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+.active-link {
+  font-weight: bold;
+  color: crimson; /* Optional: Highlight active link */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
   .list-container {
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-container {
+    width: 95%;
+  }
+
+  .list-container.active {
     display: flex;
-    gap: 20px;
   }
-  
+
   .item-container {
-    color: #fff;
-    margin-right: 20px;
-    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
   }
-  
-  .item-container a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+
+  .hamburger {
+    display: flex;
+    margin: 10px;
   }
-  
-  .item-container a:hover {
-    color: crimson;
-  }
-  
-  .active-link {
-    color: #f0a500;
-    font-weight: bold;
-  }
-  
-  /* Add margin to prevent content from being hidden behind the navbar */
-  .content-container {
-    margin-top: 70px; /* Ensure there's enough space for the fixed navbar */
-  }
-  
-  /* Responsive Design for smaller screens (Mobile view) */
-  @media (max-width: 768px) {
-    .nav-container {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-      height: auto;
-    }
-  
-    .header {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-    }
-  
-    .list-container {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .item-container a {
-      font-size: 1.2rem;
-    }
-  }
-  
-  /* Extra small screens (Mobile phones) */
-  @media (max-width: 480px) {
-    .header {
-      font-size: 1.4rem;
-    }
-  
-    .item-container a {
-      font-size: 1rem;
-    }
-  
-    .list-container {
-      gap: 8px;
-    }
-  }
-  
+}

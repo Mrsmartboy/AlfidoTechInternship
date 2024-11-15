@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './index.css';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false); // To toggle the menu on small screens
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className="nav-container">
       <h1 className="header">Portfolio</h1>
-      <ul className="list-container">
+      <div className="hamburger" onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+      
+      <ul className={`list-container ${menuOpen ? 'active' : ''}`}>
         <li className="item-container">
           <NavLink to="/" exact activeClassName="active-link">
             Home

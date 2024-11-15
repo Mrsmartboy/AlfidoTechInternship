@@ -120,7 +120,6 @@ const ContactForm = () => {
               className="contact-input"
             ></textarea>
 
-            {loading && <p>Sending message...</p>}
             {successMessage && <p className="success-message">{successMessage}</p>}
             {errorMessage && <p className="error-message">{errorMessage}</p>}
 
