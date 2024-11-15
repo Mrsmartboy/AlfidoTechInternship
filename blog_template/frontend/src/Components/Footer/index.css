@@ -1,0 +1,9 @@
+.navitems-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bottom-page{
+    color: white;
+}
