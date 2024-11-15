@@ -1,0 +1,135 @@
+.todo-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    border-radius: 10px;
+    max-width: 500px;
+
+  }
+
+
+
+  .todo-header{
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .todo-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input-container {
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    padding: 13px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+
+  }
+  
+  .add-btn {
+    margin-left: 10px;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+  }
+  
+  .add-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3F3D56;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+
+  }
+  
+  .todo-item span {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 5px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+
+  }
+  
+  .edit-btn:hover {
+    color: #ffc107;
+  }
+  
+  .delete-btn:hover {
+    color: #dc3545;
+  }
+
+  .checkbox-container{
+    display: flex;
+  }
+  
+
+
+  .todo-item.completed {
+    text-decoration: line-through; 
+    color: gray; 
+  }
+  
+  .checkbox-container {
+    display: flex;
+    text-align: center;
+    padding-bottom: 15px;
+  
+  }
+  
+  .checkbox-input {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width:576px){
+    .todo-container{
+   max-width: 500px;
+   margin: 5px;
+   padding: 10px;
+    }
+    .todo-input{
+      width:250px
+    }
+  }
+
+  @media screen and (max-width:376px){
+    .todo-input{
+width: 200px;
+    }
+  }
+  
